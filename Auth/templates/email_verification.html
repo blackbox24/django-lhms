@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %} Email Verification {% endblock %}
+
+{% block content %}
+<h2>Hello {{username}}</h2>,
+<p> You are receiving this email because you are trying register an account on {{site_name}}</p>
+<p> Your otp code is listed below. Please enter it in your open browser window</p>
+<code>{{otp_code}}</code>
+Thank you for using {{site_name}}
+{% endblock %}
